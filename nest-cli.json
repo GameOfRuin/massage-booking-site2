@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "./src",
+  "outDir": "./dist",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@nestjs/swagger",
+        "options": {
+          "introspectComments": true
+        }
+      }
+    ],
+    "assets": [
+      { 
+        "include": "**/*.hbs",
+        "outDir": "./dist",
+        "watchAssets": true
+      }
+    ]
+  }
+}
